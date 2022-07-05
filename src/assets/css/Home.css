@@ -1,0 +1,41 @@
+@import "_GlobalVariables_.css";
+
+.Header{
+    text-align: center;
+    font-size: 100px;
+
+    margin: 0;
+    margin-bottom: 10vh;
+}
+
+.MenuButtonContainer{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+
+    justify-items: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.MenuButton{
+    width: 98%;
+    height: 300px;
+
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+    .MenuButton:hover{
+        cursor: pointer;
+
+        width: 100%;
+
+        box-shadow: var(--box-shadow-hover);
+
+        font-size: 32px;
+    }
